@@ -15,12 +15,16 @@ from django.utils.encoding import force_bytes
 from django.views.decorators.http import require_POST
 import json
 import subprocess
+from .models import NewModel
 
 print(settings.BASE_DIR)
 
 
 def changes_function(request):
-    print("Try 6")
+    print("Try 7")
+    data = NewModel.objects.all()
+    print("➡ data :", data)
+
     return HttpResponse(200)
 
 
