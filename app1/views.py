@@ -20,7 +20,7 @@ print(settings.BASE_DIR)
 
 
 def changes_function(request):
-    print("Try 3")
+    print("Try 5")
     return HttpResponse(200)
 
 
