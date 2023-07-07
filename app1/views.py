@@ -16,6 +16,8 @@ from django.views.decorators.http import require_POST
 import json
 import subprocess
 
+print(settings.BASE_DIR)
+
 
 def changes_function(request):
     print("Try 3")

@@ -5,7 +5,7 @@ echo "Start"
 # pid=$(ps aux | grep '[d]jango' | awk '{print $2}')
 # echo $(ps aux)
 # kill -9 $(lsof -t -i:8000)
-cd ..
+# cd ..
 git pull origin development
 # cd crbrm/
 python3 manage.py migrate
