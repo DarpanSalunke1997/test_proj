@@ -17,6 +17,11 @@ import json
 import subprocess
 
 
+def changes_function(request):
+    print("Try 3")
+    return HttpResponse(200)
+
+
 @require_POST
 @csrf_exempt
 def git_webhook(request):
