@@ -18,7 +18,7 @@ import subprocess
 
 
 def changes_function(request):
-    print("Try 1")
+    print("Try 2")
     return HttpResponse(200)
 
 
