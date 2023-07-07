@@ -8,8 +8,9 @@
 *.pyc
 **/__pycache__/
 __pycache__/
-*/__pycache__/*
-*/__pycache__/*.pyc
+**/__pycache__/*
+**/__pycache__/*.pyc
+**/migrations/
 */migrations/
 .vscode/
 local_settings.py
