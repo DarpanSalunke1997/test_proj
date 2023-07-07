@@ -7,7 +7,7 @@ echo "Start"
 # kill -9 $(lsof -t -i:8000)
 cd ..
 git pull origin development
-cd crbrm/
+# cd crbrm/
 python3 manage.py migrate
 python3 manage.py makemigrations
 # python3 manage.py runserver
