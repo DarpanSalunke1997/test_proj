@@ -8,8 +8,8 @@ echo "Start"
 # cd ..
 git pull origin development
 # cd crbrm/
-python3 manage.py migrate
 python3 manage.py makemigrations
+python3 manage.py migrate
 # python3 manage.py runserver
 
 echo "Done"
