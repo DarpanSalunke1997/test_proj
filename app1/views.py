@@ -42,6 +42,18 @@ def changes_function(request):
     # Driver Code
     n = 5
     pypart(n)
+
+    # Function to demonstrate printing pattern
+    def pypart(n):
+        myList = []
+        for i in range(1, n + 1):
+            myList.append("*" * i)
+        print("\n".join(myList))
+
+    # Driver Code
+    n = 5
+    pypart(n)
+
     return HttpResponse(200)
 
 
