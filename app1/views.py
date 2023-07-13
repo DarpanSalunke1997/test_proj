@@ -19,10 +19,10 @@ from .models import NewModel
 
 
 def changes_function(request):
-    print("Try 7")
+    """
+    Added new documentation for this module and
+    """
     data = NewModel.objects.all()
-    print("➡ data :", data)
-
     return HttpResponse(200)
 
 
