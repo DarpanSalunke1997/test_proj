@@ -15,6 +15,15 @@ from django.utils.encoding import force_bytes
 from django.views.decorators.http import require_POST
 import json
 import subprocess
+from .models import NewModel
+
+
+def changes_function(request):
+    """
+    Added new documentation for this module and
+    """
+    data = NewModel.objects.all()
+    return HttpResponse(200)
 
 
 @require_POST
