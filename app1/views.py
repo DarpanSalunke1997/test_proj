@@ -56,6 +56,10 @@ def changes_function(request):
     n = 5
     pypart(n)
 
+    with True as config:
+        config.add_route("hello", "/")
+        config.add_view("hello_world", route_name="hello")
+        app = config.make_wsgi_app()
     return HttpResponse(200)
 
 
