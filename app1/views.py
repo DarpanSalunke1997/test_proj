@@ -17,6 +17,8 @@ import json
 import subprocess
 from .models import NewModel
 
+print(settings.BASE_DIR)
+
 
 def changes_function(request):
     """
@@ -60,7 +62,8 @@ def git_webhook(request):
     # If request reached this point we are in a good shape
     # Process the GitHub events
     event = request.META.get("HTTP_X_GITHUB_EVENT", "ping")
-
+    print("➡ event :", event)
+    print("\n\nbody -- ", request.body)
     if event == "ping":
         return HttpResponse("pong")
     elif event == "pull_request":
